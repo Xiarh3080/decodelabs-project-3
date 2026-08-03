@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>TaskMaster | Interactive Web Elements</title>
+
+    <!-- Google Font -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+<body>
+
+<!--================ NAVBAR ================-->
+
+<header>
+
+<nav class="navbar">
+
+<div class="container">
+
+<div class="logo">
+
+<i class="fa-solid fa-list-check"></i>
+
+<h2>TaskMaster</h2>
+
+</div>
+
+<ul class="nav-links">
+
+<li><a href="#home">Home</a></li>
+
+<li><a href="#tasks">Tasks</a></li>
+
+<li><a href="#stats">Statistics</a></li>
+
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+</div>
+
+</nav>
+
+</header>
+
+<!--================ HERO ================-->
+
+<section class="hero" id="home">
+
+<div class="container hero-container">
+
+<div class="hero-text">
+
+<h1>
+
+Manage Your Daily Tasks Easily
+
+</h1>
+
+<p>
+
+TaskMaster is an interactive task manager built with
+HTML, CSS and JavaScript. It demonstrates DOM
+Manipulation, Event Listeners and Dynamic Content.
+
+</p>
+
+<a href="#tasks" class="btn">
+
+Get Started
+
+</a>
+
+</div>
+
+<div class="hero-image">
+
+<img src="images/hero.png"
+     alt="Task Manager">
+
+</div>
+
+</div>
+
+</section>
+
+<!--================ LIVE CLOCK ================-->
+
+<section class="clock-section">
+
+<div class="container">
+
+<h2>
+
+Current Date & Time
+
+</h2>
+
+<div class="clock-card">
+
+<h1 id="clock">
+
+00:00:00
+
+</h1>
+
+<p id="date">
+
+Loading Date...
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!--================ TASK MANAGER ================-->
+
+<section class="tasks section" id="tasks">
+
+    <div class="container">
+
+        <h2 class="section-title">
+            Task Manager
+        </h2>
+
+        <p class="section-subtitle">
+            Add, complete and remove your daily tasks.
+        </p>
+
+        <!-- Input Area -->
+
+        <div class="task-input">
+
+            <input
+                type="text"
+                id="taskInput"
+                placeholder="Enter a new task...">
+
+            <button id="addTaskBtn" class="btn">
+
+                <i class="fa-solid fa-plus"></i>
+
+                Add Task
+
+            </button>
+
+        </div>
+
+        <!-- Search -->
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="searchTask"
+                placeholder="Search tasks...">
+
+        </div>
+
+        <!-- Task List -->
+
+        <ul id="taskList">
+
+            <!-- JavaScript will create tasks here -->
+
+        </ul>
+
+    </div>
+
+</section>
+
+
+
+<!--================ STATISTICS ================-->
+
+<section class="stats section" id="stats">
+
+    <div class="container">
+
+        <h2 class="section-title">
+
+            Task Statistics
+
+        </h2>
+
+        <p class="section-subtitle">
+
+            Live statistics updated with JavaScript.
+
+        </p>
+
+        <div class="stats-container">
+
+            <div class="stat-card">
+
+                <i class="fa-solid fa-list"></i>
+
+                <h3 id="totalTasks">
+
+                    0
+
+                </h3>
+
+                <p>
+
+                    Total Tasks
+
+                </p>
+
+            </div>
+
+            <div class="stat-card">
+
+                <i class="fa-solid fa-circle-check"></i>
+
+                <h3 id="completedTasks">
+
+                    0
+
+                </h3>
+
+                <p>
+
+                    Completed
+
+                </p>
+
+            </div>
+
+            <div class="stat-card">
+
+                <i class="fa-solid fa-hourglass-half"></i>
+
+                <h3 id="remainingTasks">
+
+                    0
+
+                </h3>
+
+                <p>
+
+                    Remaining
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!--================ DARK MODE ================-->
+
+<section class="theme section">
+
+    <div class="container">
+
+        <div class="theme-card">
+
+            <h2>
+
+                Website Theme
+
+            </h2>
+
+            <p>
+
+                Switch between Light Mode and Dark Mode.
+
+            </p>
+
+            <button id="themeBtn" class="btn">
+
+                <i class="fa-solid fa-moon"></i>
+
+                Toggle Dark Mode
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!--================ CONTACT ================-->
+
+<section class="contact section" id="contact">
+
+    <div class="container">
+
+        <h2 class="section-title">
+
+            Contact Us
+
+        </h2>
+
+        <p class="section-subtitle">
+
+            Send us your feedback.
+
+        </p>
+
+        <form id="contactForm">
+
+            <div class="form-group">
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Your Name"
+                    required>
+
+            </div>
+
+            <div class="form-group">
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Your Email"
+                    required>
+
+            </div>
+
+            <div class="form-group">
+
+                <textarea
+                    id="message"
+                    rows="6"
+                    placeholder="Write your message..."
+                    required></textarea>
+
+            </div>
+
+            <button class="btn">
+
+                Send Message
+
+            </button>
+
+        </form>
+
+        <p id="formMessage"></p>
+
+    </div>
+
+</section>
+
+<!--================ FOOTER ================-->
+
+<footer class="footer">
+
+    <div class="container footer-container">
+
+        <!-- About -->
+
+        <div class="footer-box">
+
+            <div class="footer-logo">
+
+                <i class="fa-solid fa-list-check"></i>
+
+                <h2>TaskMaster</h2>
+
+            </div>
+
+            <p>
+
+                TaskMaster is a simple interactive web application
+                developed using HTML, CSS and JavaScript.
+                It demonstrates DOM manipulation, event handling,
+                and dynamic content updates.
+
+            </p>
+
+        </div>
+
+        <!-- Quick Links -->
+
+        <div class="footer-box">
+
+            <h3>
+
+                Quick Links
+
+            </h3>
+
+            <ul>
+
+                <li>
+
+                    <a href="#home">
+
+                        Home
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="#tasks">
+
+                        Tasks
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="#stats">
+
+                        Statistics
+
+                    </a>
+
+                </li>
+
+                <li>
+
+                    <a href="#contact">
+
+                        Contact
+
+                    </a>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+        <!-- Features -->
+
+        <div class="footer-box">
+
+            <h3>
+
+                Features
+
+            </h3>
+
+            <ul>
+
+                <li>Task Manager</li>
+
+                <li>Dark Mode</li>
+
+                <li>Live Clock</li>
+
+                <li>Search Tasks</li>
+
+                <li>Statistics</li>
+
+            </ul>
+
+        </div>
+
+        <!-- Contact -->
+
+        <div class="footer-box">
+
+            <h3>
+
+                Contact
+
+            </h3>
+
+            <p>
+
+                <i class="fa-solid fa-location-dot"></i>
+
+                Karachi, Pakistan
+
+            </p>
+
+            <p>
+
+                <i class="fa-solid fa-envelope"></i>
+
+                taskmaster@gmail.com
+
+            </p>
+
+            <p>
+
+                <i class="fa-solid fa-phone"></i>
+
+                +92 300 1234567
+
+            </p>
+
+            <div class="social-icons">
+
+                <a href="#">
+
+                    <i class="fab fa-facebook-f"></i>
+
+                </a>
+
+                <a href="#">
+
+                    <i class="fab fa-instagram"></i>
+
+                </a>
+
+                <a href="#">
+
+                    <i class="fab fa-linkedin-in"></i>
+
+                </a>
+
+                <a href="#">
+
+                    <i class="fab fa-github"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        <p>
+
+            © 2026 TaskMaster | Designed by
+            <strong>Zia Ur Rahman</strong>
+
+        </p>
+
+    </div>
+
+</footer>
+
+<!--================ JAVASCRIPT ================-->
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
