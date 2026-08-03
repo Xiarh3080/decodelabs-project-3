@@ -191,18 +191,17 @@ The website is fully responsive and optimized for:
 
 # 📸 Screenshots
 
-Add screenshots of your project after completion.
-
-Example:
-
-```text
-screenshots/
-│
 ├── homepage.png
+<img width="1429" height="886" alt="image" src="https://github.com/user-attachments/assets/3c3321ef-bbf7-41e8-9e0b-998109b733b6" />
+
 ├── task-manager.png
+<img width="1390" height="508" alt="image" src="https://github.com/user-attachments/assets/3ba77020-15f9-4386-8bdb-55f066c64714" />
+
 ├── dark-mode.png
+<img width="1559" height="841" alt="image" src="https://github.com/user-attachments/assets/e92201f9-7e9e-4595-927a-9583aa1e6890" />
+
 ├── mobile-view.png
-```
+<img width="1080" height="2400" alt="Screenshot_20260803-170010" src="https://github.com/user-attachments/assets/207a37d9-7a8c-4cb9-a143-cedc28c8f67e" />
 
 ---
 
@@ -265,6 +264,8 @@ No additional software or dependencies are required.
 Frontend Development Intern
 
 **DecodeLabs**
+
+For Live Demo Visit : https://xiarh3080.github.io/decodelabs-project-3/
 
 ---
 
